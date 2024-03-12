@@ -9,7 +9,7 @@ class Regi extends StatefulWidget {
 class _MyAppState extends State<Regi> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold(backgroundColor: Colors.teal,
       body: Center(
         child: Column(
           children: [
@@ -62,6 +62,9 @@ class _MyAppState extends State<Regi> {
                   )
               ),
             ),
+             TextButton(onPressed: null, child: Text('register'),)
+
+
           ],
         ),
       ),

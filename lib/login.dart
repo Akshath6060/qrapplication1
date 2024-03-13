@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
 import 'package:qrapplication/registration.dart';
-=======
-import 'package:qrapplication/qr%20page.dart';
 import 'package:qrapplication/registration.dart';
 import 'package:qrapplication/qr page.dart';
->>>>>>> 71aa701 (Initial commit)
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
@@ -50,13 +46,9 @@ class _MyAppState extends State<MyApp> {
                   labelText:'password'
               ),),
             ),
-<<<<<<< HEAD
-            TextButton(onPressed: null, child:Text('login'),
-=======
-            TextButton(onPressed: () {
-              Navigator.push(context,MaterialPageRoute(builder: (context)=>Qr()));
+            TextButton(onPressed:() {
+              Navigator.push(context,MaterialPageRoute(builder:(context)=>Qr() ));
             }, child:Text('login'),
->>>>>>> 71aa701 (Initial commit)
               style: TextButton.styleFrom(backgroundColor: Colors.blue),),
             Text("no having account plz register"),
             TextButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context)=>Regi() ));

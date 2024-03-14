@@ -54,6 +54,7 @@ class _MyAppState extends State<MyApp> {
             TextButton(onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context)=>Regi() ));
 
             }, child: Text('registration'))
+
           ],
         ),
       ),

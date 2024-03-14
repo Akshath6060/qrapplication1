@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:qrapplication/log.dart';
 class Regi extends StatefulWidget {
   const Regi({super.key});
 
@@ -62,7 +63,9 @@ class _MyAppState extends State<Regi> {
                   )
               ),
             ),
-             TextButton(onPressed: null, child: Text('register'),)
+             TextButton(onPressed: () {
+               Navigator.push(context, MaterialPageRoute(builder: (context)=>Log()));
+             }, child: Text('register'),)
 
 
           ],

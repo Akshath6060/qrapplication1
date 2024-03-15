@@ -15,8 +15,8 @@ class _QrState extends State<Qr> {
       body:Center(
         child: Column(
           children: [
-            Icon(Icons.account_circle_rounded,size:200,),
-            SizedBox(height: 100,),
+            Icon(Icons.account_circle_rounded,size:100,),
+            SizedBox(height: 50,),
             QrImageView(
               data: '1234567890',
               version: QrVersions.auto,

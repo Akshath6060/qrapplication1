@@ -16,16 +16,19 @@ class _CamState extends State<Cam> {
     return Scaffold(
       backgroundColor: Colors.teal,
       body:
-            MobileScanner(
-              // fit: BoxFit.contain,
-              onDetect: (capture) {
-                final List<Barcode> barcodes = capture.barcodes;
-                final Uint8List? image = capture.image;
-                for (final barcode in barcodes) {
-                  debugPrint('Barcode found! ${barcode.rawValue}');
-                }
-              },
-            ),
-      );
+             MobileScanner(
+
+                      // fit: BoxFit.contain,
+                      onDetect: (capture) {
+                        final List<Barcode> barcodes = capture.barcodes;
+                        final Uint8List? image = capture.image;
+                        for (final barcode in barcodes) {
+                          debugPrint('Barcode found! ${barcode.rawValue}');
+                        }
+                      },
+                    ),
+
+
+              );
   }
 }

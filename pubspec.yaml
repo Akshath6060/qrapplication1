@@ -29,8 +29,8 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   qr_flutter: ^4.1.0
-  camera: ^0.10.5+9
-  mobile_scanner: ^4.0.1
+#  camera: ^0.10.5+9
+#  mobile_scanner: ^4.0.1
   http: ^1.2.0
 
 

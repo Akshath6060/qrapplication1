@@ -1,8 +1,8 @@
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
-import 'package:camera/camera.dart';
-import 'package:mobile_scanner/mobile_scanner.dart';
+// import 'package:camera/camera.dart';
+// import 'package:mobile_scanner/mobile_scanner.dart';
 class Cam extends StatefulWidget {
   const Cam({super.key});
 
@@ -15,18 +15,18 @@ class _CamState extends State<Cam> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.teal,
-      body:
-             MobileScanner(
-
-                      // fit: BoxFit.contain,
-                      onDetect: (capture) {
-                        final List<Barcode> barcodes = capture.barcodes;
-                        final Uint8List? image = capture.image;
-                        for (final barcode in barcodes) {
-                          debugPrint('Barcode found! ${barcode.rawValue}');
-                        }
-                      },
-                    ),
+      body:Placeholder()
+             // MobileScanner(
+             //
+             //          // fit: BoxFit.contain,
+             //          onDetect: (capture) {
+             //            final List<Barcode> barcodes = capture.barcodes;
+             //            final Uint8List? image = capture.image;
+             //            for (final barcode in barcodes) {
+             //              debugPrint('Barcode found! ${barcode.rawValue}');
+             //            }
+             //          },
+             //        ),
 
 
               );
